@@ -1,11 +1,25 @@
 <!-- extends is for inheriting from the base.html -->
 {% extends 'base.html' %}
 {% block content %}
-<div class="row justify-content-center my-5">
-    <div class="col-md-5">
-        <h1>Page Not Found</h1>
-        <p>Make sure you are connected to the internet or you are entering a valid city name</p>
-        <a href="{% url 'index' %}" class="btn btn-secondary">Go Home</a>
-    </div>
-</div>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-5">
+                <h1>Page Not Found</h1>
+                <p>Make sure you are connected to the internet or you are entering a valid city name</p>
+                <a href="{% url 'index' %}" class="btn btn-secondary">Go Home</a>
+            </div>
+        </div>
+</html>
+
 {% endblock %}
